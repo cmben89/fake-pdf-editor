@@ -10,6 +10,7 @@
                 extend: {
                     colors: {
                         raisin_black:'#1E1E24',
+                        'raisin_black-600': '#494a5b',
                         coral: '#FB9F89',
                         'coral-600': '#DF4723',
                         khaki: '#C4AF9A',
@@ -41,12 +42,13 @@
         <div class="grid max-w-screen-xl flex items-center pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
             <!--Left Column-->
             <div class="mr-auto place-self-center col-span-7">
-                <h1 class="text-jungle_green text-4xl font-extrabold leading-none tracking-tight py-4">
+                <h1 class="text-pale_azure text-4xl font-extrabold leading-none tracking-tight py-4">
                     Take control of your PDFs<br>for <span class="italic underline decoration-coral">FREE!</span>
                 </h1>
-                <p class="text-jungle_green text-xl leading-none tracking-tight py-4">
+                <p class="text-pale_azure text-xl leading-none tracking-tight py-4">
                     The <span class="underline decoration-coral">completely free</span> online PDF editing tool that does it all.
                 </p>
+                <p class="text-pale_azure text-xl leading-none tracking-tight py-4">Edit PDFs Anywhere, Securely, and Limitlessly!</p>
                 <div class="space-y-4 py-8 flex justify-center">
                     <a href="#" class="items-center justify-center w-full px-5 py-3 text-md font-medium text-center border border-coral rounded-lg bg-coral hover:bg-coral-600 hover:border-coral-600 hover:text-gray-300">
                         Start editing now!
@@ -60,37 +62,48 @@
         </div>
     </section>
     <!--End Section 1-->
-    <!--TODO: Learn how to set up grid and flex layouts with tradewind for section 2
-    which will be top three features.-->
-    </section>
 
     <!--Section 2 - Features-->
-    <section class="bg-raisin_black">
+    <section class="bg-raisin_black-600 py-5">
         <div class="max-w-screen-xl mx-auto flex flex-col">
             <div class="grid grid-cols-12">
-                <div id="feat" class="col-span-4 col-start-2 flex flex-col">
-                    <h1 class="text-4xl text-jungle_green">Edit with Confidence</h1>
-                    <p class="text-xl text-jungle_green">Your documents are in good hands. We use industry-leading security protocols to keep your PDFs safe on our secure servers. Edit with peace of mind, knowing your files are always protected.</p>
+                <div id="feat" class="col-start-1 col-span-6 flex flex-col justify-center">
+                    <h1 class="text-4xl text-pale_azure pb-8">Edit with Confidence - <span class="underline decoration-coral">Secure Servers</span></h1>
+                    <p class="text-xl text-pale_azure border-b-2 border-solid border-pale_azure pb-4">Your documents are in good hands. We use industry-leading security protocols to keep your PDFs safe on our secure servers.</p>
+                    <ul class="pt-8 text-pale_azure font-medium space-y-5">
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Data Encryption - HTTPS with TLS 1.3</span></li>
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Access Control - 2FA and User Permissions</span></li>
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Secure Document Handling - Deletion after inactivity and Regular Security Audits</span></li>
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Transparency and Compliance - Clear privacy policy and GDPR and CCPA compliant</span></li>
+                    </ul>
+                    <p class="text-xl text-pale_azure pt-8">Edit with peace of mind, knowing your files are always protected.</p>
                 </div>
-                <div id="image" class="col-span-4 col-start-8">
+                <div id="image" class="col-start-9 col-span-4">
                     <img src="./resources/global-res/img/secure-server.svg" alt="secure server" height="auto">
                 </div>
             </div>
             <div class="grid grid-cols-12">
-                <div id="image" class="col-span-4 col-start-2">
+                <div id="image" class="col-span-6 col-start-1">
                     <img src="./resources/global-res/img/devices.svg" alt="any device">
                 </div>
-                <div id="feat" class="col-span-4 col-start-7">
-                    <h1 class="text-4xl text-jungle_green">Unleash Your Edits - All Devices, All the Time</h1>
-                    <p class="text-xl text-jungle_green">PDFresh goes where you go. Edit PDFs on your desktop, laptop, tablet, or even your phone. Our online editor is accessible from any device with a web browser, giving you the flexibility to work on your documents whenever and wherever inspiration strikes.</p>
+                <div id="feat" class="col-span-6 col-start-7 flex flex-col justify-center">
+                    <h1 class="text-4xl text-pale_azure pb-8">Unleash Your Edits - <span class="underline decoration-coral">All Devices, All the Time</span></h1>
+                    <p class="text-xl text-pale_azure">PDFresh goes where you go. Edit PDFs on your desktop, laptop, tablet, or even your phone. Our online editor is accessible from any device with a web browser, giving you the flexibility to work on your documents whenever and wherever inspiration strikes.</p>
                 </div>
             </div>
-            <div class="grid grid-cols-12">
-                <div id="feat" class="col-span-4 col-start-2">
-                    <h1 class="text-4xl text-jungle_green">No Limits to Your Edits - Edit Like a Pro</h1>
-                    <p class="text-xl text-jungle_green">Don't settle for basic edits. PDFresh empowers you to completely transform your PDFs. Edit text, images, add annotations, rearrange pages, and so much more. With PDFresh, the possibilities for editing are limitless.</p>
+            <div class="grid grid-cols-12 pb-8">
+                <div id="feat" class="col-span-6 col-start-1 flex flex-col justify-center">
+                    <h1 class="text-4xl text-pale_azure pb-8">No Limits to Your Edits - <span class="underline decoration-coral">Edit Like a Pro</span></h1>
+                    <p class="text-xl text-pale_azure border-b-2 border-solid border-pale_azure pb-4">Don't settle for basic edits. PDFresh empowers you to completely transform your PDFs. With PDFresh, the possibilities for editing are limitless.</p>
+                    <ul class="pt-8 text-pale_azure font-medium space-y-5">
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Text Editing</span></li>
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Add/Remove Images</span></li>
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Add Annotatations</span></li>
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Reorder Pages</span></li>
+                        <li class="flex space-x-3"><img src="./resources/global-res/img/checkmark.png" width="24px"><span>Digitally Sign Documents</span></li>
+                    </ul>
                 </div>
-                <div id="image" class="col-span-4 col-start-7">
+                <div id="image" class="col-span-6 col-start-7 flex">
                     <img src="./resources/global-res/img/edit-pdf.svg" alt="pro editor">
                 </div>
             </div>
